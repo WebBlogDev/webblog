@@ -20,4 +20,5 @@ public class Index {
 	public String faqPage(){
 		return "faq";
 	}
+	// Тест 
 }
