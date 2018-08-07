@@ -1,10 +1,10 @@
-var M = {};
+var B = {};
 
-M.init = function () {
+B.init = function () {
     console.log('Init call');
 };
 
-M.login = function () {
+B.login = function () {
     var data = {
         login:$('#inputLogin').val(),
         password:$('#inputPassword').val(),
@@ -18,6 +18,6 @@ M.login = function () {
 
 };
 
-M.register = function () {
+B.register = function () {
 
 };
