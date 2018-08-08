@@ -3,6 +3,7 @@ package ru.webblog.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class Index {
@@ -14,11 +15,10 @@ public class Index {
 	}
 	@RequestMapping(method = RequestMethod.GET,value="/login")
 	public String loginPage(){
-		return "login";
+		return "login.html";
 	}
 	@RequestMapping(method = RequestMethod.GET,value="/faq")
 	public String faqPage(){
 		return "faq";
 	}
-	// Тест 
 }

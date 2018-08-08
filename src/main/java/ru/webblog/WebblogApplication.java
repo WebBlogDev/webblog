@@ -1,9 +1,13 @@
 package ru.webblog;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@EnableAutoConfiguration
+@ComponentScan
 public class WebblogApplication {
 
 	public static void main(String[] args) {
