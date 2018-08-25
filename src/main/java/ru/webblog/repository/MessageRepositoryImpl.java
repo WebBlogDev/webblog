@@ -43,7 +43,7 @@ public class MessageRepositoryImpl implements MessageRepository {
 	/**
 	 * Обновлять сообщения пока нет необходимости,выходим
 	 * TODO реализовать возможность редактирования сообщений
-	 * @param message
+	 * @param message объект сообщения
 	 */
 	@Override
 	public void updateMessage(Message message) {

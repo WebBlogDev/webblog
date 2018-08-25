@@ -34,7 +34,7 @@ public class ResourceResolver implements WebMvcConfigurer {
 //		registry.jsp("/WEB-INF/views/", ".jsp");
 //	}
 
-//	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-//		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
-//	}
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+	}
 }
