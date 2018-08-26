@@ -21,7 +21,7 @@ public class MessageRepositoryImpl implements MessageRepository {
 			ps.execute();
 
 		} catch (SQLException ex){
-			System.err.println("Ошибка добавления сообжения");
+			System.err.println("Ошибка добавления сообщения");
 			ex.printStackTrace();
 		}
 	}

@@ -1,3 +1,27 @@
-{{>header}}
-Error
-{{>footer}}
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Index page</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/m.js"></script>
+    <!--<sec:csrfMetaTags /></sec:csrfMetaTags>-->
+</head>
+<body>
+
+<div th:include="fragments/header.html::header"></div>
+<main class="container" role="main">
+    <div class="page-content">Ошибка<br>
+    Обратитесь в службу поддержки
+    </div>
+</main>
+
+
+</body>
+</html>

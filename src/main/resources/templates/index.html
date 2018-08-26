@@ -15,8 +15,11 @@
 </head>
 <body>
 
-<div th:include="header.html::header"></div>
+<div th:include="fragments/header.html::header"></div>
 <main class="container" role="main">
-    <div class="page-content">Index page</div>
-
+    <div th:include="${'fragments/'+layout+'.html'}::${layout}" class="page-content">Index page</div>
 </main>
+
+
+</body>
+</html>

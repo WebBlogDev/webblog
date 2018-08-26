@@ -10,15 +10,24 @@ public class Index {
 
 
 	@RequestMapping(method = RequestMethod.GET,value="/")
-	public String index(){
-		return "index";
+	public ModelAndView index(){
+		ModelAndView mw = new ModelAndView();
+		mw.setViewName("index");
+		mw.addObject("layout","index");
+		return mw;
 	}
 	@RequestMapping(method = RequestMethod.GET,value="/login")
-	public String loginPage(){
-		return "login.html";
+	public ModelAndView loginPage(){
+		ModelAndView mw = new ModelAndView();
+		mw.setViewName("index");
+		mw.addObject("layout","login");
+		return mw;
 	}
 	@RequestMapping(method = RequestMethod.GET,value="/faq")
-	public String faqPage(){
-		return "faq";
+	public ModelAndView faqPage(){
+		ModelAndView mw = new ModelAndView();
+		mw.setViewName("index");
+		mw.addObject("layout","faq");
+		return mw;
 	}
 }
