@@ -13,10 +13,10 @@
     <script src="/js/m.js"></script>
     <!--<sec:csrfMetaTags /></sec:csrfMetaTags>-->
 </head>
-<body>
+<body class="bg-light">
 
 <div th:include="fragments/header.html::header"></div>
-<main class="container" role="main">
+<main class="container-fluid" role="main">
     <div th:include="${'fragments/'+layout+'.html'}::${layout}" class="page-content">Index page</div>
 </main>
 
